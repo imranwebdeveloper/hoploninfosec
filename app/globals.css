@@ -111,3 +111,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Swiper custom styles */
+.partner-slider .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-slider {
+  width: 100%;
+  padding: 10px 0;
+}
