@@ -1,20 +1,24 @@
 export function AboutSection() {
   return (
     <section className="bg-black text-white py-16">
-      <div className="container mx-auto px-4">
+      <div className="container md:px-8 mx-auto px-4 max-w-7xl">
         <h2 className="text-5xl font-bold mb-6">
           About Us
           <div className="w-48 md:w-96 h-1 bg-red-600 mt-2 mb-8"></div>
         </h2>
 
         <p className="text-lg mb-16 max-w-5xl">
-          At Hoplon Infosec, our extensive over decade of experience enables us to effectively combat the present-day
-          cybersecurity challenges. With our innovative deep web & dark web monitoring, cyber threat intelligence,
-          attack surface management, risk management, vulnerability management, incident response, penetration testing,
-          red teaming, brand intelligence, takedown & disruption, consulting services, and cybersecurity training; we
-          provide unmatched guidance to organizations across industries, regions, and the globe, regardless of their
-          size. As a dependable partner and seasoned authority, we cultivate robust partnerships with our clients,
-          guaranteeing enduring triumph through our collaborative efforts.
+          At Hoplon Infosec, our extensive over decade of experience enables us
+          to effectively combat the present-day cybersecurity challenges. With
+          our innovative deep web & dark web monitoring, cyber threat
+          intelligence, attack surface management, risk management,
+          vulnerability management, incident response, penetration testing, red
+          teaming, brand intelligence, takedown & disruption, consulting
+          services, and cybersecurity training; we provide unmatched guidance to
+          organizations across industries, regions, and the globe, regardless of
+          their size. As a dependable partner and seasoned authority, we
+          cultivate robust partnerships with our clients, guaranteeing enduring
+          triumph through our collaborative efforts.
         </p>
 
         <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
@@ -36,7 +40,9 @@ export function AboutSection() {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">World Class Professional Cybersecurity team</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                World Class Professional Cybersecurity team
+              </h3>
             </div>
           </div>
 
@@ -59,7 +65,9 @@ export function AboutSection() {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">We succeed when we make our clients successful.</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                We succeed when we make our clients successful.
+              </h3>
             </div>
           </div>
 
@@ -80,7 +88,9 @@ export function AboutSection() {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">Continuous Growth with Operational Excellence</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                Continuous Growth with Operational Excellence
+              </h3>
             </div>
           </div>
 
@@ -104,11 +114,13 @@ export function AboutSection() {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">Our team is committed with Honesty and Teamwork</h3>
+              <h3 className="text-2xl font-bold mb-2">
+                Our team is committed with Honesty and Teamwork
+              </h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,17 +1,21 @@
-import Link from "next/link"
+import Link from "next/link";
 
-export function CtaBanner() {
+export function CtaBanner({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
   return (
-    <section className="bg-black py-16 px-4">
-      <div className="container mx-auto">
+    <section className="bg-black py-16 ">
+      <div className="container md:px-8 mx-auto px-4 max-w-7xl ">
         <div className="bg-gradient-to-r from-purple-900 to-purple-700 rounded-3xl p-8 md:p-16 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            We're Here to Secure Your Hard Work
+            {title}
           </h2>
           <p className="text-white text-lg max-w-4xl mx-auto mb-10">
-            Protect your system from cyber attacks by utilizing our comprehensive range of services. Safeguard your data
-            and network infrastructure with our advanced security measures, tailored to meet your specific needs. With
-            our expertise and cutting-edge technology, you can rest assured.
+            {description}
           </p>
           <Link
             href="/get-started"
@@ -22,5 +26,5 @@ export function CtaBanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }

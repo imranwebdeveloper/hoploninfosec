@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Mail, Phone } from "lucide-react"
+import Link from "next/link";
+import { Mail, Phone } from "lucide-react";
 
 export function TopContactBar() {
   return (
-    <div className="bg-purple-900 text-white flex justify-end items-center px-4 py-2 space-x-4">
+    <div className="bg-purple-900 container md:px-8 mx-auto px-4 text-white flex justify-end items-center  py-2 space-x-4">
       <Link href="/contact" className="flex items-center gap-2 text-sm">
         <Mail size={16} />
         <span className="hidden md:inline">Contact Us</span>
@@ -19,5 +19,5 @@ export function TopContactBar() {
         Schedule a Consultation
       </Link>
     </div>
-  )
+  );
 }

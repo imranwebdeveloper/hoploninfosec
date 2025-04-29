@@ -1,33 +1,33 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import Image from "next/image"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay } from "swiper/modules"
+import { useEffect } from "react";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
-import "swiper/css"
+import "swiper/css";
 
 interface Logo {
-  src: string
-  alt: string
+  src: string;
+  alt: string;
 }
 
 interface PartnerLogoSliderProps {
-  logos: Logo[]
+  logos: Logo[];
 }
 
 export function PartnerLogoSlider({ logos }: PartnerLogoSliderProps) {
   // This ensures Swiper works correctly with SSR
   useEffect(() => {
     // This is just to ensure Swiper initializes properly in Next.js
-  }, [])
+  }, []);
 
   return (
     <div className="bg-purple-900 bg-opacity-50 rounded-3xl py-8 px-4">
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={30}
+        spaceBetween={12}
         slidesPerView={1}
         loop={true}
         autoplay={{
@@ -52,11 +52,11 @@ export function PartnerLogoSlider({ logos }: PartnerLogoSliderProps) {
       >
         {logos.map((logo, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-lg p-6 flex items-center justify-center h-24">
+            <div className="bg-white w-full rounded-lg p-6 flex items-center justify-center h-24">
               <Image
                 src={logo.src || "/placeholder.svg"}
                 alt={logo.alt}
-                width={120}
+                width={200}
                 height={60}
                 className="max-h-12 w-auto object-contain"
               />
@@ -65,5 +65,5 @@ export function PartnerLogoSlider({ logos }: PartnerLogoSliderProps) {
         ))}
       </Swiper>
     </div>
-  )
+  );
 }
